@@ -19,6 +19,7 @@ Route::get('/', function () {
 });
 
 Route::resource('products', ProductController::class)->middleware(['auth', 'verified']);
+//メール確認を有効にする
 Auth::routes(['verify' => true]);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
