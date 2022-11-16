@@ -18,11 +18,11 @@ class ProductController extends Controller
     {
         //Productモデルを使ってすべての商品データをデータベースから取得
         if ($request->category !== null) {
-            $products = Product::where('category_id', $request->category)->paginate(15);
+            $products = Product::where('category_id', $request->category)->sortable()->paginate(15);
             $total_count = Product::where('category_id', $request->category)->count();
             $category = Category::find($request->category);
         } else {
-            $products = Product::paginate(15);
+            $products = Product::sortable()->paginate(15);
             $total_count = "";
             $category = null;
         }
