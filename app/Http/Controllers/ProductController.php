@@ -14,13 +14,23 @@ class ProductController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
         //Productモデルを使ってすべての商品データをデータベースから取得
-        $products = Product::all();
+        if ($request->category !== null) {
+            $products = Product::where('category_id', $request->category)->sortable()->paginate(15);
+            $total_count = Product::where('category_id', $request->category)->count();
+            $category = Category::find($request->category);
+        } else {
+            $products = Product::sortable()->paginate(15);
+            $total_count = "";
+            $category = null;
+        }
+        $categories = Category::all();
+        $major_category_names = Category::pluck('major_category_name')->unique();
  
         //resources\views\productsディレクトリの中にあるindex.blade.phpが呼び出し
-        return view('products.index', compact('products'));
+        return view('products.index', compact('products', 'category', 'categories', 'major_category_names', 'total_count'));
     }
 
     /**
