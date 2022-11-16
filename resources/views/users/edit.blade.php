@@ -64,7 +64,7 @@
                          <label for="address" class="text-md-left samuraimart-edit-user-info-label">住所</label>
                      </div>
                      <div class="collapse show editUserPhone">
-                         <input id="address" type="text" class="form-control @error('address') is-invalid @enderror" name="address" value="{{ $user->address }}" required autocomplete="address" autofocus placeholder="東京都渋谷区道玄坂X-X-X">
+                         <input id="address" type="text" class="form-control @error('address') is-invalid @enderror" name="address" value="{{ $user->address }}" required autocomplete="address" autofocus placeholder="address">
                          @error('address')
                          <span class="invalid-feedback" role="alert">
                              <strong>住所を入力してください</strong>
