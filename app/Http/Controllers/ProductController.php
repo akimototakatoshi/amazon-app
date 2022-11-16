@@ -17,7 +17,7 @@ class ProductController extends Controller
     public function index()
     {
         //Productモデルを使ってすべての商品データをデータベースから取得
-        $products = Product::all();
+        $products = Product::pageinate(15);
  
         //resources\views\productsディレクトリの中にあるindex.blade.phpが呼び出し
         return view('products.index', compact('products'));
