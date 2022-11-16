@@ -1,14 +1,14 @@
-<nav class="navbar navbar-expand-md navbar-light shadow-sm samuraimart-header-container">
+<nav class="navbar navbar-expand-md navbar-light shadow-sm amazonmart-header-container">
    <div class="container">
      <a class="navbar-brand" href="{{ url('/') }}">
        <img src="{{asset('img/logo.jpg')}}">
      </a>
      <form class="row g-1">
        <div class="col-auto">
-         <input class="form-control samuraimart-header-search-input">
+         <input class="form-control amazonmart-header-search-input">
        </div>
        <div class="col-auto">
-         <button type="submit" class="btn samuraimart-header-search-button"><i class="fas fa-search samuraimart-header-search-icon"></i></button>
+         <button type="submit" class="btn amazonmart-header-search-button"><i class="fas fa-search amazonmart-header-search-icon"></i></button>
        </div>
      </form>
      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">

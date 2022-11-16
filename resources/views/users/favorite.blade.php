@@ -15,13 +15,13 @@
                          <img src="{{ asset('img/dummy.png')}}" class="img-fluid w-100">
                      </a>
                      <div class="container mt-3">
-                         <h5 class="w-100 samuraimart-favorite-item-text">{{App\Models\Product::find($fav->favoriteable_id)->name}}</h5>
-                         <h6 class="w-100 samuraimart-favorite-item-text">&yen;{{App\Models\Product::find($fav->favoriteable_id)->price}}</h6>
+                         <h5 class="w-100 amazonmart-favorite-item-text">{{App\Models\Product::find($fav->favoriteable_id)->name}}</h5>
+                         <h6 class="w-100 amazonmart-favorite-item-text">&yen;{{App\Models\Product::find($fav->favoriteable_id)->price}}</h6>
                      </div>
                  </div>
              </div>
              <div class="col-md-2 d-flex align-items-center justify-content-end">
-                 <a href="{{ route('products.favorite', $fav->favoriteable_id) }}" class="samuraimart-favorite-item-delete">
+                 <a href="{{ route('products.favorite', $fav->favoriteable_id) }}" class="amazonmart-favorite-item-delete">
                      削除
                  </a>
              </div>
@@ -33,7 +33,7 @@
                      <input type="hidden" name="price" value="{{App\Models\Product::find($fav->favoriteable_id)->price}}">
                      <input type="hidden" name="qty" value="1">
                      <input type="hidden" name="weight" value="0">
-                     <button type="submit" class="btn samuraimart-favorite-add-cart">カートに入れる</button>
+                     <button type="submit" class="btn amazonmart-favorite-add-cart">カートに入れる</button>
                  </form>
              </div>
              @endforeach

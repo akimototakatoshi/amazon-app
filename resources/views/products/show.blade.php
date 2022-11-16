@@ -36,19 +36,19 @@
                  <input type="hidden" name="weight" value="0">
                  <div class="row">
                      <div class="col-7">
-                         <button type="submit" class="btn samuraimart-submit-button w-100">
+                         <button type="submit" class="btn amazonmart-submit-button w-100">
                              <i class="fas fa-shopping-cart"></i>
                              カートに追加
                          </button>
                      </div>
                      <div class="col-5">
                      @if($product->isFavoritedBy(Auth::user()))
-                         <a href="{{ route('products.favorite', $product) }}" class="btn samuraimart-favorite-button text-favorite w-100">
+                         <a href="{{ route('products.favorite', $product) }}" class="btn amazonmart-favorite-button text-favorite w-100">
                              <i class="fa fa-heart"></i>
                              お気に入り解除
                          </a>
                          @else
-                         <a href="{{ route('products.favorite', $product) }}" class="btn samuraimart-favorite-button text-favorite w-100">
+                         <a href="{{ route('products.favorite', $product) }}" class="btn amazonmart-favorite-button text-favorite w-100">
                              <i class="fa fa-heart"></i>
                              お気に入り
                          </a>
@@ -94,7 +94,7 @@
                          @enderror
                          <textarea name="content" class="form-control m-2"></textarea>
                          <input type="hidden" name="product_id" value="{{$product->id}}">
-                         <button type="submit" class="btn samuraimart-submit-button ml-2">レビューを追加</button>
+                         <button type="submit" class="btn amazonmart-submit-button ml-2">レビューを追加</button>
                      </form>
                  </div>
              </div>
