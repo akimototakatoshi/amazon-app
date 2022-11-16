@@ -6,13 +6,13 @@
   color: #0fbe9f;
 }
 
-.samuraimart-favorite-add-cart {
+.amazonmart-favorite-add-cart {
   border-radius: 2px;
   color: #ffffff;
   background-color: #0fbe9f;
 }
 
-.samuraimart-sidebar-category-label {
+.amazonmart-sidebar-category-label {
   width: 156px;
   height: 20px;
   font-family: YuGo;
@@ -25,7 +25,7 @@
   color: #191919;
 }
 
-.samuraimart-favorite-button {
+.amazonmart-favorite-button {
   border-radius: 2px;
   border: solid 1px #0fbe9f;
   background-color: #ffffff;
@@ -35,28 +35,28 @@
   color: #0fbe9f;
 }
 
-.samuraimart-header-container {
+.amazonmart-header-container {
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
   background-color: #ffffff;
 }
 
-.samuraimart-header-search-input {
+.amazonmart-header-search-input {
   border: solid 1px #e5e5e5;
 }
 
-.samuraimart-header-search-button {
+.amazonmart-header-search-button {
   background-color: #0fbe9f;
 }
 
-.samuraimart-header-search-icon {
+.amazonmart-header-search-icon {
   color: #ffffff;
 }
 
-.samuraimart-header-fav-icon {
+.amazonmart-header-fav-icon {
   color: #191919;
 }
 
-.samuraimart-header-shoppingcart-icon {
+.amazonmart-header-shoppingcart-icon {
   color: #ffffff;
 }
 
@@ -154,13 +154,13 @@
   }
  
 
-.samuraimart-login-input {
+.amazonmart-login-input {
     border-radius: 2px;
     border: solid 1px #b2b2b2;
     background-color: #ffffff;
 }
 
-.samuraimart-check-label {
+.amazonmart-check-label {
     font-family: YuGo;
     font-size: 12px;
     font-weight: 500;
@@ -171,12 +171,12 @@
     color: #000000;
 }
 
-.samuraimart-require-input-label {
+.amazonmart-require-input-label {
     border-radius: 1px;
     background-color: #e2001b;
 }
 
-.samuraimart-require-input-label-text {
+.amazonmart-require-input-label-text {
     font-family: YuGo;
     font-size: 14px;
     font-weight: 500;
@@ -187,7 +187,7 @@
     color: #ffffff;
 }
 
-.samuraimart-submit-button {
+.amazonmart-submit-button {
     font-family: YuGo;
     font-size: 14px;
     font-weight: bold;
@@ -199,7 +199,7 @@
     background-color: #0fbe9f;
 }
 
-.samuraimart-login-text {
+.amazonmart-login-text {
     font-family: YuGo;
     font-size: 14px;
     font-weight: bold;

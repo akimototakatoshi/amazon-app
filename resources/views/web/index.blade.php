@@ -15,7 +15,7 @@
                  </a>
                  <div class="row">
                      <div class="col-12">
-                         <p class="samuraimart-product-label mt-2">
+                         <p class="amazonmart-product-label mt-2">
                              和栗の詰め合わせ<br>
                              <label>￥2000</label>
                          </p>
@@ -28,7 +28,7 @@
                  </a>
                  <div class="row">
                      <div class="col-12">
-                         <p class="samuraimart-product-label mt-2">
+                         <p class="amazonmart-product-label mt-2">
                              おいしい柿<br>
                              <label>￥500</label>
                          </p>
@@ -42,7 +42,7 @@
                  </a>
                  <div class="row">
                      <div class="col-12">
-                         <p class="samuraimart-product-label mt-2">
+                         <p class="amazonmart-product-label mt-2">
                              旬なみかん<br>
                              <label>￥1200</label>
                          </p>
@@ -60,7 +60,7 @@
                  </a>
                  <div class="row">
                      <div class="col-12">
-                         <p class="samuraimart-product-label mt-2">
+                         <p class="amazonmart-product-label mt-2">
                              ロボット掃除機<br>
                              <label>￥55000</label>
                          </p>
@@ -74,7 +74,7 @@
                  </a>
                  <div class="row">
                      <div class="col-12">
-                         <p class="samuraimart-product-label mt-2">
+                         <p class="amazonmart-product-label mt-2">
                              3人掛けソファー<br>
                              <label>￥35000</label>
                          </p>
@@ -88,7 +88,7 @@
                  </a>
                  <div class="row">
                      <div class="col-12">
-                         <p class="samuraimart-product-label mt-2">
+                         <p class="amazonmart-product-label mt-2">
                              コーヒーカップ<br>
                              <label>￥1000</labiel>
                          </p>
@@ -102,7 +102,7 @@
                  </a>
                  <div class="row">
                      <div class="col-12">
-                         <p class="samuraimart-product-label mt-2">
+                         <p class="amazonmart-product-label mt-2">
                              食器 カトラリーセット1組<br>
                              <label>￥2000</label>
                          </p>

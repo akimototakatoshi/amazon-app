@@ -57,13 +57,13 @@
          <form method="post" action="{{route('carts.destroy')}}" class="d-flex justify-content-end mt-3">
              {{ csrf_field() }}
              <input type="hidden" name="_method" value="DELETE">
-             <a href="{{route('products.index')}}" class="btn samuraimart-favorite-button border-dark text-dark mr-3">
+             <a href="{{route('products.index')}}" class="btn amazonmart-favorite-button border-dark text-dark mr-3">
                  買い物を続ける
              </a>
              @if ($total > 0)
-             <div class="btn samuraimart-submit-button" data-bs-toggle="modal" data-bs-target="#buy-confirm-modal">購入を確定する</div>
+             <div class="btn amazonmart-submit-button" data-bs-toggle="modal" data-bs-target="#buy-confirm-modal">購入を確定する</div>
              @else
-             <div class="btn samuraimart-submit-button disabled" data-bs-toggle="modal" data-bs-target="#buy-confirm-modal">購入を確定する</div>
+             <div class="btn amazonmart-submit-button disabled" data-bs-toggle="modal" data-bs-target="#buy-confirm-modal">購入を確定する</div>
              @endif
 
              <div class="modal fade" id="buy-confirm-modal" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -76,8 +76,8 @@
                              </button>
                          </div>
                          <div class="modal-footer">
-                             <button type="button" class="btn samuraimart-favorite-button border-dark text-dark" data-bs-dismiss="modal">閉じる</button>
-                             <button type="submit" class="btn samuraimart-submit-button">購入</button>
+                             <button type="button" class="btn amazonmart-favorite-button border-dark text-dark" data-bs-dismiss="modal">閉じる</button>
+                             <button type="submit" class="btn amazonmart-submit-button">購入</button>
                          </div>
                      </div>
                  </div>
