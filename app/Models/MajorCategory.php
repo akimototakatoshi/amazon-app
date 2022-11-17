@@ -9,7 +9,7 @@ class MajorCategory extends Model
 {
     use HasFactory;
 
-    public function caregories()
+    public function categories()
     {
         return $this->hasMany('App\Models\Category');
     }

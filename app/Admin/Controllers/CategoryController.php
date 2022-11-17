@@ -56,9 +56,7 @@ class CategoryController extends AdminController
         $show->field('id', __('Id'));
         $show->field('name', __('Name'));
         $show->field('description', __('Description'));
-        $show->field('major_category_name', __('Major category name'));
         $show->field('major_category.name', __('Major category name'));
-
         $show->field('created_at', __('Created at'));
         $show->field('updated_at', __('Updated at'));
 
