@@ -22,7 +22,7 @@ class ProductController extends Controller
             $products = Product::where('category_id', $request->category)->sortable()->paginate(15);
             $total_count = Product::where('category_id', $request->category)->count();
             $category = Category::find($request->category);
-            $major_category = MajorCayrgory::find($category->major_category_id);
+            $major_category = MajorCategory::find($category->major_category_id);
         } else {
             $products = Product::sortable()->paginate(15);
             $total_count = "";
@@ -31,7 +31,7 @@ class ProductController extends Controller
         }
         $categories = Category::all();
         //$major_category_names = Category::pluck('major_category_name')->unique();
-        $major_cayrgories = MajorCategory::all();
+        $major_categories = MajorCategory::all();
  
         //resources\views\productsディレクトリの中にあるindex.blade.phpが呼び出し
         return view('products.index', compact('products', 'category', 'major_category', 'categories', 'major_categories', 'total_count'));
