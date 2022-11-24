@@ -21,9 +21,12 @@ class ProductController extends Controller
         if ($request->category !== null) {
             $products = Product::where('category_id', $request->category)->sortable()->paginate(15);
             $total_count = Product::where('category_id', $request->category)->count();
+            //全カテゴリーを取得
+            //$catgories = category::all();
             $category = Category::find($request->category);
             $major_category = MajorCategory::find($category->major_category_id);
         } else {
+            //商品のページネーションリンクを表示
             $products = Product::sortable()->paginate(15);
             $total_count = "";
             $category = null;
@@ -34,6 +37,8 @@ class ProductController extends Controller
         $major_categories = MajorCategory::all();
  
         //resources\views\productsディレクトリの中にあるindex.blade.phpが呼び出し
+        /*compact関数を使用して、取得した（$categoriesと$major_category_names）を
+        ビューに渡す*/
         return view('products.index', compact('products', 'category', 'major_category', 'categories', 'major_categories', 'total_count'));
     }
 
